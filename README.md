@@ -1,102 +1,161 @@
-# Atrium
+# MDMAPanel
 
-A real-time target management and monitoring system built with SvelteKit, Socket.IO, and PostgreSQL.
+A powerful real-time target management and monitoring system built with modern web technologies. MDMAPanel provides comprehensive tools for tracking, managing, and interacting with targets in real-time.
 
-## Features
+[![CI Status](https://github.com/xtial/mdmapanel/workflows/CI/badge.svg)](https://github.com/xtial/mdmapanel/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- Real-time target monitoring and management
-- User authentication and authorization
-- Admin dashboard
-- Target tracking and status updates
-- Guild management system
+## 🚀 Features
+
+### Core Features
+- **Real-time Monitoring**
+  - Live target status updates
+  - Real-time activity tracking
+  - Instant notification system
+  
+- **Advanced Management**
+  - Multi-target control
+  - Custom action deployment
+  - Batch operations support
+  
+- **Security & Authentication**
+  - Role-based access control
+  - Secure JWT authentication
+  - Session management
+  
+- **Guild System**
+  - Multi-guild support
+  - Custom domain management
+  - Guild-specific settings
+
+### Additional Features
 - Sound notification system
+- Email notification integration
 - Custom domain management
-- Email notification system
+- Extensive API endpoints
+- Real-time WebSocket communication
+- Responsive dashboard interface
 
-## Prerequisites
+## 📋 Prerequisites
 
-- Node.js (v16 or higher)
-- PostgreSQL (v12 or higher)
-- npm or yarn package manager
+Before you begin, ensure you have the following installed:
+- Node.js (v16.x or higher)
+- PostgreSQL (v12.x or higher)
+- npm (v7.x or higher) or yarn (v1.22.x or higher)
+- Git
 
-## Installation
+## 🛠 Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/xtial/atrium.git
-cd atrium
-```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/xtial/mdmapanel.git
+   cd mdmapanel
+   ```
 
-2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
+2. **Install Dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-3. Set up the database:
-```bash
-# Create a new PostgreSQL database
-createdb atrium
+3. **Database Setup**
+   ```bash
+   # Create PostgreSQL database
+   createdb mdmapanel
 
-# Initialize the database schema
-psql -d atrium -f schema.sql
+   # Initialize schema
+   psql -d mdmapanel -f schema.sql
 
-# (Optional) Seed the database with sample data
-psql -d atrium -f seed.sql
-```
+   # (Optional) Add sample data
+   psql -d mdmapanel -f seed.sql
+   ```
 
-4. Configure environment variables:
-Create a `.env` file in the root directory with the following variables:
-```env
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/atrium
-JWT_SECRET=your_jwt_secret_here
-SMTP_HOST=your_smtp_host
-SMTP_PORT=your_smtp_port
-SMTP_USER=your_smtp_username
-SMTP_PASS=your_smtp_password
-```
+4. **Environment Configuration**
+   Create a `.env` file in the root directory:
+   ```env
+   DATABASE_URL=postgresql://postgres:postgres@localhost:5432/mdmapanel
+   JWT_SECRET=your_jwt_secret_here
+   SMTP_HOST=your_smtp_host
+   SMTP_PORT=587
+   SMTP_USER=your_smtp_username
+   SMTP_PASS=your_smtp_password
+   ```
 
-5. Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
+5. **Start Development Server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-The application will be available at `http://localhost:5173`
+   Access the application at `http://localhost:5173`
 
-## Production Deployment
+## 📚 Documentation
 
-1. Build the application:
+Detailed documentation is available in the `/docs` directory:
+
+- [Getting Started Guide](docs/getting-started.md)
+- [Architecture Overview](docs/architecture.md)
+- [API Documentation](docs/api.md)
+- [WebSocket Events](docs/websocket.md)
+- [Database Schema](docs/database.md)
+- [Security Guide](docs/security.md)
+- [Deployment Guide](docs/deployment.md)
+- [Contributing Guide](CONTRIBUTING.md)
+
+## 🚀 Deployment
+
+### Production Build
 ```bash
 npm run build
 # or
 yarn build
 ```
 
-2. Start the production server:
+### Production Server
 ```bash
 npm run start
 # or
 yarn start
 ```
 
-## Project Structure
+See the [Deployment Guide](docs/deployment.md) for detailed hosting instructions.
+
+## 🏗 Project Structure
 
 ```
-atrium/
+mdmapanel/
 ├── src/
-│   ├── lib/           # Shared components and utilities
-│   ├── routes/        # SvelteKit routes and API endpoints
-│   └── app.html       # HTML template
-├── static/            # Static assets
-├── schema.sql         # Database schema
-├── seed.sql          # Sample data for development
-└── server.js         # Socket.IO server
+│   ├── lib/              # Shared utilities and components
+│   │   ├── components/   # Reusable UI components
+│   │   ├── db/          # Database configuration
+│   │   ├── utils/       # Helper functions
+│   │   └── types/       # TypeScript definitions
+│   ├── routes/          # SvelteKit routes and API endpoints
+│   │   ├── admin/       # Admin dashboard routes
+│   │   ├── api/         # API endpoints
+│   │   └── dashboard/   # User dashboard routes
+│   └── app.html         # HTML template
+├── static/              # Static assets
+├── docs/               # Documentation
+├── tests/              # Test files
+├── schema.sql          # Database schema
+├── seed.sql           # Sample data
+└── server.js          # Socket.IO server
 ```
 
-## Contributing
+## 🔒 Security
+
+- All communications are encrypted using industry-standard protocols
+- JWT-based authentication system
+- Role-based access control
+- Regular security updates
+- See [Security Guide](docs/security.md) for best practices
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -104,18 +163,20 @@ atrium/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
-## License
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 👏 Acknowledgments
 
 - SvelteKit team for the amazing framework
 - Socket.IO team for real-time capabilities
-- All contributors who have helped with the project
+- All our contributors and supporters
 
-## Support
+## 💬 Support
 
-For support, open an issue in the GitHub repository.
+- Create an issue for bug reports or feature requests
+
+## 🔄 Version History
+
+See [CHANGELOG.md](CHANGELOG.md) for details about versions and updates.

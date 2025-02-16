@@ -11,7 +11,7 @@ const { Pool } = pkg;
 const pool = new Pool({
 	user: 'postgres',
 	host: 'localhost',
-	database: 'atrium', // replace with your database name
+	database: 'mdmapanel', // replace with your database name
 	password: 'postgres', // replace with your password
 	port: 5432
 });

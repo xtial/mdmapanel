@@ -4,7 +4,7 @@ const { Pool } = pkg;
 export const pool = new Pool({
 	user: 'postgres',
 	host: 'localhost',
-	database: 'atrium',
+	database: 'mdmapanel',
 	password: 'postgres',
 	port: 5432
 });
