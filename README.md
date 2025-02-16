@@ -38,7 +38,7 @@ A powerful real-time target management and monitoring system built with modern w
 - Real-time WebSocket communication
 - Responsive dashboard interface
 
-## �� Documentation
+## 📋 Documentation
 
 ### Getting Started
 - [Getting Started Guide](docs/getting-started.md) - Quick setup and first steps
@@ -119,7 +119,11 @@ Before you begin, ensure you have the following installed:
 
 ## 🚀 Deployment
 
-See our comprehensive [Deployment Guide](docs/deployment.md) for detailed instructions on:
+See our comprehensive deployment guides for detailed instructions:
+- [VPS Hosting Guide](docs/hosting/vps-setup.md) - Complete guide for VPS deployment
+- [Deployment Guide](docs/deployment.md) - General deployment instructions
+
+These guides cover:
 - Development environment setup
 - Production deployment
 - Server configuration
