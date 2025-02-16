@@ -5,12 +5,22 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
+		"dev:server": "node server.js",
 		"build": "vite build",
 		"preview": "vite preview",
+		"start": "node build/index.js",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:coverage": "vitest run --coverage",
+		"prepare": "husky install",
+		"db:migrate": "node scripts/migrate.js",
+		"db:seed": "node scripts/seed.js",
+		"deploy:prod": "npm run build && pm2 reload ecosystem.config.js --env production",
+		"deploy:staging": "npm run build && pm2 reload ecosystem.config.js --env staging"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",

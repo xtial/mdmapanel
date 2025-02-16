@@ -156,4 +156,3 @@ Access the application at `http://localhost:5173/admin/register` and create your
 - Read the [API Documentation](api.md)
 - Review [Security Best Practices](security.md)
 - Explore [Advanced Features](advanced-features.md)
-- Join our [Discord Community](https://discord.gg/your-server)

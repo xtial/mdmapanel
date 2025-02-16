@@ -5,6 +5,8 @@ A powerful real-time target management and monitoring system built with modern w
 [![CI Status](https://github.com/xtial/mdmapanel/workflows/CI/badge.svg)](https://github.com/xtial/mdmapanel/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[Quick Start](#-installation) | [Documentation](#-documentation) | [Contributing](#-contributing) | [Support](#-support)
+
 ## 🚀 Features
 
 ### Core Features
@@ -35,6 +37,30 @@ A powerful real-time target management and monitoring system built with modern w
 - Extensive API endpoints
 - Real-time WebSocket communication
 - Responsive dashboard interface
+
+## �� Documentation
+
+### Getting Started
+- [Getting Started Guide](docs/getting-started.md) - Quick setup and first steps
+- [Architecture Overview](docs/architecture.md) - System design and components
+- [Database Schema](docs/database.md) - Database structure and relationships
+- [Security Guide](docs/security.md) - Security measures and best practices
+
+### Feature Documentation
+- [Guild System](docs/features/guild-system.md) - Multi-tenant guild management
+- [Target Management](docs/features/target-management.md) - Target tracking and control
+
+### API Documentation
+- [API Reference](docs/api/README.md) - Complete API documentation
+- [WebSocket Events](docs/api/websocket.md) - Real-time event documentation
+
+### Configuration
+- [Environment Variables](docs/config/env-vars.md) - Configuration options
+- [Deployment Guide](docs/deployment.md) - Production deployment
+
+### Maintenance
+- [Backup and Recovery](docs/maintenance/backup.md) - Data backup procedures
+- [Monitoring Guide](docs/maintenance/monitoring.md) - System monitoring
 
 ## 📋 Prerequisites
 
@@ -91,77 +117,43 @@ Before you begin, ensure you have the following installed:
 
    Access the application at `http://localhost:5173`
 
-## 📚 Documentation
-
-Detailed documentation is available in the `/docs` directory:
-
-- [Getting Started Guide](docs/getting-started.md)
-- [Architecture Overview](docs/architecture.md)
-- [API Documentation](docs/api.md)
-- [WebSocket Events](docs/websocket.md)
-- [Database Schema](docs/database.md)
-- [Security Guide](docs/security.md)
-- [Deployment Guide](docs/deployment.md)
-- [Contributing Guide](CONTRIBUTING.md)
-
 ## 🚀 Deployment
 
-### Production Build
-```bash
-npm run build
-# or
-yarn build
-```
-
-### Production Server
-```bash
-npm run start
-# or
-yarn start
-```
-
-See the [Deployment Guide](docs/deployment.md) for detailed hosting instructions.
-
-## 🏗 Project Structure
-
-```
-mdmapanel/
-├── src/
-│   ├── lib/              # Shared utilities and components
-│   │   ├── components/   # Reusable UI components
-│   │   ├── db/          # Database configuration
-│   │   ├── utils/       # Helper functions
-│   │   └── types/       # TypeScript definitions
-│   ├── routes/          # SvelteKit routes and API endpoints
-│   │   ├── admin/       # Admin dashboard routes
-│   │   ├── api/         # API endpoints
-│   │   └── dashboard/   # User dashboard routes
-│   └── app.html         # HTML template
-├── static/              # Static assets
-├── docs/               # Documentation
-├── tests/              # Test files
-├── schema.sql          # Database schema
-├── seed.sql           # Sample data
-└── server.js          # Socket.IO server
-```
+See our comprehensive [Deployment Guide](docs/deployment.md) for detailed instructions on:
+- Development environment setup
+- Production deployment
+- Server configuration
+- Security measures
+- Monitoring and maintenance
+- Performance optimization
+- Scaling strategies
 
 ## 🔒 Security
 
-- All communications are encrypted using industry-standard protocols
-- JWT-based authentication system
-- Role-based access control
+Security is a top priority. See our [Security Guide](docs/security.md) for:
+- Authentication and authorization
+- Data encryption
+- Security best practices
 - Regular security updates
-- See [Security Guide](docs/security.md) for best practices
+- Vulnerability reporting
+- Compliance guidelines
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) for:
+- Code of conduct
+- Development workflow
+- Pull request process
+- Coding standards
+- Testing requirements
+- Documentation guidelines
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 💬 Support
+
+Need help? We've got you covered:
+- [Documentation](#-documentation) - Comprehensive guides and references
+- [GitHub Issues](https://github.com/xtial/mdmapanel/issues) - Bug reports and feature requests
+- Discord Community - Real-time community support
 
 ## 📝 License
 
@@ -172,10 +164,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - SvelteKit team for the amazing framework
 - Socket.IO team for real-time capabilities
 - All our contributors and supporters
-
-## 💬 Support
-
-- Create an issue for bug reports or feature requests
 
 ## 🔄 Version History
 
